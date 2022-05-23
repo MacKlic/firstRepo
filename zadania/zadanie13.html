@@ -1,0 +1,28 @@
+<html> 
+ <head>
+ <script language=JavaScript>
+     function wzor()
+     {
+        var A=prompt("Podaj pierwszą liczbę    A=","");
+        var B=prompt("Podaj drugą liczbę       B=","");
+             var A=parseFloat(A);
+             var B=parseFloat(B);
+                AS=A.toString();
+                BS=B.toString();
+                    document.write(A+" "+B+"<br>");
+                    //document.write( "("+A+"+"+B+")^3="+A+"^3+3*(("+A+")^2)*("+B+")+3*("+A+")*(("+B+")^2)+"+B+"^3="+A^3 +"+"+3*A^2*B +"+"+3*A*B^2+"+"+B^3+"="+A^3+3*A^2*B+3*A*B^2+B^3 );
+                    document.write("("+AS+"+"+BS+")^3=");
+                    document.write(AS+"^3+3*(("+AS+")^2)*("+BS+")+3*("+AS+")*(("+BS+")^2)+"+BS+"^3=");
+                    document.write(Math.pow(A,3)+"+"+(3*Math.pow(A,2)*B)+"+"+(3*A*Math.pow(B,2))+"+"+(Math.pow(B,3))+"=");
+                    document.write(Math.pow(A,3)+(3*Math.pow(A,2))*B+3*A*Math.pow(B,2)+Math.pow(B,3) );
+    
+    
+    
+    
+                }
+ </script> 
+</head> 
+<body> 
+ <input type="button" onclick="wzor()" value="Wzór skróconego mnożenia" /> 
+ </body> 
+</html> 

@@ -1,0 +1,26 @@
+<html> 
+<head>
+ <script language=JavaScript>
+    function sekundy()
+    {
+        var D1_Kli=prompt("Pierwszy dzień :","");
+        var G1_Kli=prompt("Która godzina 1 ?","");
+        var D2_Kli=prompt("Drugi dzień :","");
+        var G2_Kli=prompt("Która godzina 2 ?","");
+
+            var D1_Kli=parseInt(D1_Kli);
+            var G1_Kli=parseInt(G1_Kli);
+            var D2_Kli=parseInt(D2_Kli);
+            var G2_Kli=parseInt(G2_Kli);
+               
+            
+                var L_Sek=Math.abs(D2_Kli - D1_Kli) * 86400 - (G1_Kli * 3600) + (G2_Kli * 3600);
+                    
+                document.write("Różnica w sekundach to :"+L_Sek+" sekund <br>")
+    }
+ </script> 
+</head> 
+<body> 
+ <input type="button" onclick="sekundy()" value="Oblicz różnicę" /> 
+ </body> 
+</html> 

@@ -1,0 +1,55 @@
+<html> 
+ <head>
+
+      
+ <script language=JavaScript>
+     function Teoria()
+     {
+         document.write("Cztery sposoby wyprowadzania danych na stronę:"+"<br>"+
+                        "1. z użyciem dokument.write()"+"<br>"+
+                        "2. z użyciem okienka alert()"+"<br>"+
+                        "3. do okienek formularza"+"<br>"+
+                        "4. do tabeli"+"<br>"+"<br>"+
+
+                        "Co to jest funkcja?"+"<br>"+
+                       "1. Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy"+"<br>"+
+                       "2. Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod"+"<br>"+
+                       "3. Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b),"+"<br>"+
+                       "4. Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return."+"<br>"+"<br>");
+
+document.write( '<table style="border: 2px solid black; border-collapse: collapse"><tr><th style="border: 2px solid black; border-collapse: collapse">Metoda</th><th style="border: 2px solid black; border-collapse: collapse">opis</th></tr><tr><th style="border: 2px solid black; border-collapse: collapse">getElementById(id)</th><td style="border: 2px solid black; border-collapse: collapse">dostęp do wszystkich elementów o konkretnej wartości atrybutu id </td> </tr><tr><th style="border: 2px solid black; border-collapse: collapse">getElementByTagName(znacznik) </th><td style="border: 2px solid black; border-collapse: collapse">dostęp do wszystkich elementów o typie znacznika, np. P lub DIV </td></tr><tr><th style="border: 2px solid black; border-collapse: collapse">getElementByName(nazwa)</th><td style="border: 2px solid black; border-collapse: collapse">dostęp do wszystkich elementów o konkretnej wartości atrybutu</td></tr></table> <br>'
+)
+
+
+
+document.write("Właściwości tak pobranego elementu to: <br> - innerHTML – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w tabeli, <br>- innerText – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie, <br>- className – umożliwia określenie klasy CSS użytej do prezentacji elementu.<br>"
++"<br><br>Przykład<br>");
+
+document.write('<TEXTAREA  rows="20" cols="80">')
+
+document.writeln("<!DOCTYPE html> ");
+document.writeln("<head> ");
+document.writeln("<title> Przykłady dostępu do elementów </title> ");
+document.writeln('<meta charset="utf-8">');
+document.writeln('<style type="text/css"> ');
+document.writeln(".wyroznienieCzerwone { color: Red; font-weight: 600; } ");
+document.writeln("</style>");
+document.writeln("</head> ");
+document.writeln("<body>");
+document.writeln('<div id="nazwa"></div>');
+document.writeln("<scripτ>");
+document.writeln('document.getElementById("nazwa").innerHTML = "Witaj"; ');
+document.writeln('document.getElementById("nazwa").className = "wyroznienieCzerwone";');
+document.writeln("</scripτ>");
+document.writeln("</body>");
+
+
+
+document.write("</TEXTAREA>")
+}
+ </script> 
+</head> 
+<body> 
+ <input type="button" onclick="Teoria()" value="Teoria" /> 
+ </body> 
+</html> 

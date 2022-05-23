@@ -1,0 +1,41 @@
+<html> 
+ <head>
+ <script language=JavaScript>
+     function Obliczenia()
+     {
+        var x1_kli=prompt("Podaj x1 : ","");
+        var x2_kli=prompt("Podaj x2 : ","");
+       
+
+
+            var y=3*Math.pow(x1_kli,(6/8));
+            document.write("wczytane liczby: x1 = "+x1_kli+"           x2 = "+x2_kli+"<br>")
+            document.write("y= "+y);
+            document.write("<br><br><br>");
+
+
+
+            var x1_rad=x1_kli*Math.PI/180
+
+            var y1=2*Math.cos(x1_rad)+2*Math.sin(x1_rad);
+      
+            document.write("wczytane liczby: <br> w stopniach x1="+x1_kli+"[stopniach]  x1="+x1_rad+"[radianach]")
+            document.write("<br><br><br>")
+            
+            
+
+            var y3=Math.pow(Math.pow(x1_kli,5)+2*Math.pow(x2_kli,4),1/3)*Math.abs(x1_kli-x2_kli);
+        
+            document.write("x1 = "+x1_kli+"<br>")
+            document.write("x2 = "+x2_kli+"<br>")
+            document.write("y1 = "+y+"<br>")
+            document.write("y2 = "+y1+"<br>")
+            document.write("y3 = "+y3+"<br>")
+        
+        }
+ </script> 
+</head> 
+<body> 
+ <input type="button" onclick="Obliczenia()" value="Obliczenia" /> 
+ </body> 
+</html> 

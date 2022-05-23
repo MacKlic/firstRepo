@@ -1,0 +1,23 @@
+<html> 
+ <head>
+ <script language=JavaScript>
+     function rozpad()
+     {
+        var N0=prompt("Podaj początkową liczbę atomów : ","");
+        var t=prompt("Podaj czas rozpadu : ","");
+        var T=prompt("Podaj czas połowicznego rozpadu : ","");
+            var Lambda=Math.log(2)/T;
+            var N=N0*Math.pow(Math.E,(-Lambda*t));
+      
+            document.write("Początkowa liczba atomów: "+N0+"<br>Czas rozpadu:"+t+"<br>Czas połowicznego rozpadu: "+T+"<br>" )
+            document.write("λ = "+Lambda+"<br> Liczba pozostałych atomów: "+N)     
+        
+        
+        
+        }
+ </script> 
+</head> 
+<body> 
+ <input type="button" onclick="rozpad()" value="Obliczanie rozpadu atomowego dla podanych danych" /> 
+ </body> 
+</html> 

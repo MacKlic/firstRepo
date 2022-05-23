@@ -1,0 +1,18 @@
+<html> 
+ <head>
+ <script language=JavaScript>
+     function sekundy()
+     {
+        var D1_Kli=prompt("Pierwszy dzień :","");
+        var D2_Kli=prompt("Drugi dzień :","");
+             var D1_Kli=parseInt(D1_Kli);
+             var D2_Kli=parseInt(D2_Kli);
+                 var L_Sek=Math.abs(D2_Kli - D1_Kli)*86400;
+                     document.write("Różnica w sekundach to :"+L_Sek+" sekund <br>")
+     }
+ </script> 
+</head> 
+<body> 
+ <input type="button" onclick="sekundy()" value="Oblicz różnicę" /> 
+ </body> 
+</html> 
